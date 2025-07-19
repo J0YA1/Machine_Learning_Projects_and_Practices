@@ -25,7 +25,7 @@ async def main():
     )
 
     import os
-    os.environ["GROQ_API_KEY"] = os.getenv("GROQ_API_KEY") # this I have add my API key in .env file
+    os.environ["GROQ_API_KEY"] = os.getenv("GROQ_API_KEY") # this I have add my API key in .env file where you have to create by yourself
     
     tools = await client.get_tools()
     model = ChatGroq(model="moonshotai/kimi-k2-instruct")
